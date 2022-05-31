@@ -1,0 +1,58 @@
+<br/>
+<div class="card bg-primary text-white">
+    <div class="card-header">
+      <h3>Formulario Clientes</h3>
+    </div>
+    <div class="card-body w-200" >
+      <form (ngSubmit)="create()">
+        <div class="form-group row">
+          <br />
+          <label for="id" class="col-form-label col-sm-2">ID</label>
+          <div class="col-sm-6">
+            <input  class="form-control" [(ngModel)]="client.id" name="id">
+          </div>
+        </div>
+        <br />
+        <div class="form-group row">
+          <label for="name" class="col-form-label col-sm-2">Nombre</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" [(ngModel)]="client.name" name="name">
+          </div>
+        </div>
+        <br />
+        <div class="form-group row">
+          <label for="lastName" class="col-form-label col-sm-2">Apellido</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" [(ngModel)]="client.lastName" name="lastName">
+          </div>
+        </div>
+        <br />
+        <div class="form-group row">
+          <label for="email" class="col-form-label col-sm-2">Email</label>
+          <div class="col-sm-6">
+            <input type="email" class="form-control" [(ngModel)]="client.email" name="email">
+          </div>
+        </div>
+        <br />
+        <div class="form-group row">
+          <label for="sex" class="col-form-label col-sm-2">Sexo</label>
+          <div class="col-sm-6">
+            <input class="form-control" [(ngModel)]="client.sex" name="sex">
+          </div>
+        </div>
+        <br />
+        <div class="form-group row col-sm-12 col-xs-12">
+          <div>
+            &nbsp;
+            &nbsp;
+            <button class="btn btn-success w-25" role="button">Crear</button>
+            &nbsp;
+            &nbsp;
+            <button class="btn btn-danger w-25" type="button" routerLink="/clientes">Cancelar</button>
+  
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <br />
